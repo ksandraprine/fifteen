@@ -1,0 +1,169 @@
+.body {
+    display: flex;
+    background-color: #e4ffff;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text_title {
+    font-family: Comic Sans MS, cursive;
+    font-size: 36px;
+    margin-top: 12px;
+}
+
+.text_content {
+    font-family: Comic Sans MS, cursive;
+    font-size: 28px;
+    display: flex;
+}
+
+.gameField {
+    border: 2px solid black;
+    background-color: #d9d9d9;
+}
+
+.wraper {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin_right {
+    margin-right: 8px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.fix_width {
+    width: 70px;
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    display: flex;
+    margin-top: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+.game {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings {
+    width: 300px;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.header {
+    font-family: Comic Sans MS, cursive;
+    font-weight: bold;
+}
+
+.table_body {
+    font-family: Comic Sans MS, cursive;
+}
+
+.even {
+    background-color: #dddddd;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider_text {
+    font-family: Comic Sans MS, cursive;
+    font-weight: bold;
+    display: flex;
+    margin-left: 4px;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+.switch-btn {
+    display: inline-block;
+    width: 28px; 
+    height: 10px;
+    border-radius: 6px; 
+    background: #bfbfbf; 
+    z-index: 0;
+    margin: 5px 0 0 12px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms; 
+}
+.switch-btn::after {
+    content: "";
+    height: 16px; 
+    width: 16px; 
+    border-radius: 9px; 
+    background: #fff; 
+    top: -3px; 
+    left: -3px; 
+    transition-duration: 300ms; 
+    box-shadow: 0 0 5px 0 #999999; 
+    position: absolute;
+    z-index: 1;
+}
+.switch-on {
+    background: #fff;
+    box-shadow: inset 0 0 5px 0 #999999; 
+}
+.switch-on::after {
+    left: 15px;
+    background: #0075ff;
+}
+
+.switch_animations {
+    display: flex;
+    font-family: Comic Sans MS, cursive;
+    align-items: center;
+}
+
+.start {
+ width: 80px;
+ height: 80px;
+}
+
+.restart {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 16px;
+} 
+
+.finish {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 16px;
+}

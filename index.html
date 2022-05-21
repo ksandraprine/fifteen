@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="text_title">Пятнашки</div>
+    <div class="container">
+        <div class="settings">
+            <div class="slider_text">
+                <div class="margin_right">Размерность поля:</div>
+                <div id="dimension">4 x 4</div>
+            </div>
+            <input id="slider" class="slider" type="range" min="2" max="10" step="1">
+            <div class="switch_animations">
+                <div>Анимация:</div>
+                <div class="switch-btn switch-on" id="switch"></div>
+            </div>
+        </div>
+        <div class="game">
+            <div class="wraper">
+                <div class="text_content">
+                    <div class="margin_right">Ходы:</div>
+                    <div id="steps">0</div> 
+                </div>
+                <div class="text_content">
+                    <div class="margin_right">Время:</div>
+                    <div class="fix_width" id="timer">0:00</div>
+                </div>
+            </div>
+            <canvas class='gameField' id="canvas" width="500" height="500"></canvas>
+            <div class="buttons">
+                <input id="start" class="start" type="image" src="images/play.png" title="Начать">
+                <input class="hide restart" id="restart" type="image" src="images/refresh.png" title="Перезапустить">
+                <input class="hide finish" id="finish" type="image" src="images/finish.png" title="Завершить">
+            </div>
+        </div>
+        <div class="results">
+            <table>
+                <thead>
+                    <tr class="header">i
+                        <th>№</th>
+                        <th>Ходы</th>
+                        <th>Время</th>
+                        <th>Результат</th>
+                        <th>Поле</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body" class="table_body"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src ="./game.js"></script>
+</body>
+</html>
